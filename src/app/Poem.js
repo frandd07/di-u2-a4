@@ -2,7 +2,9 @@ const poem = {
     lines: [
       'Escribo, borro y reescribo',
       'Borro de nuevo, y luego',
-      'Florece una amapola.'
+      'Florece una amapola.',
+      'probando',
+      'otra prueba mas'
     ]
   };
   
@@ -12,6 +14,7 @@ const poem = {
         {poem.lines.map((line, index) =>
           <p key={index}>
             {line}
+            {index < poem.lines.length - 1 && <hr />}
           </p>
         )}
       </article>
